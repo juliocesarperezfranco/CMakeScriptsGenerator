@@ -10,10 +10,11 @@
 struct ConfigurationInfo
 {
   bool enabled = false;
+  std::string name = "";
   std::string version = "0.0.0";
   std::string description = "";
-  std::string generator = "Visual Studio 17 2022";
-  std::string architecture = "x64";
+  std::string generator = "";
+  std::string architecture = "";
   std::string sourceDir = "";
   std::string binaryDir = "";
   EnvironmentInfo environment;
