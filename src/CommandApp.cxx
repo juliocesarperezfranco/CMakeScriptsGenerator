@@ -52,7 +52,8 @@ bool CommandApp::OnCmdLineParsed(wxCmdLineParser& parser)
 int CommandApp::OnRun()
 {
   ScriptParser sp(this->m_inputFile);
-  sp.Parse();
+  sp.ParseScript();
   sp.GenerateReport();
+  sp.GenerateScript("C:/temp/build.bat");
   return 0;
 }
