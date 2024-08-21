@@ -25,7 +25,11 @@ const bool IsValid(const EnvironmentInfo& environmentInfo)
 
 const bool IsValid(const VariableInfo& variableInfo)
 {
-  return false;
+  if (variableInfo.name.empty() || variableInfo.type.empty() || variableInfo.value.empty() || variableInfo.enabled == false)
+  {
+    return false;
+  }
+  return true;
 }
 
 void Print(const std::string& message, const bool newLine)
