@@ -54,6 +54,6 @@ int CommandApp::OnRun()
   ScriptParser sp(this->m_inputFile);
   sp.ParseScript();
   sp.GenerateReport();
-  sp.GenerateScript("C:/temp/build.bat");
+  sp.GenerateScript("./cmake_script.bat");
   return 0;
 }
